@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:text="Height"
             android:layout_marginVertical="10dp"
-            android:textSize="40sp"
+            android:textSize="25sp"
             android:layout_gravity="center"
             android:textColor="@color/white"
             />
@@ -247,7 +247,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Inch"
+                    android:text="Inches"
                     android:layout_margin="10dp"
                     android:textSize="16sp"
                     android:textColor="@color/white"
@@ -266,7 +266,7 @@
             android:layout_height="wrap_content"
             android:text="Weight"
             android:layout_marginVertical="10dp"
-            android:textSize="40sp"
+            android:textSize="25sp"
             android:layout_gravity="center"
             android:textColor="@color/white"
             />
@@ -360,6 +360,32 @@
             android:backgroundTint="#DC0A58"
             android:text="Calculate BMI"
             android:layout_marginVertical="30dp"
+            android:textSize="18sp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="35dp"
             />
 
     </LinearLayout>

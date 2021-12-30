@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.BMICalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#72BBFA</item>
-        <item name="colorPrimaryVariant">#4EA9FA</item>
+        <item name="colorPrimary">#090935</item>
+        <item name="colorPrimaryVariant">#090935</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
