@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -198,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                     if(height != 0 && user_weight !=0){
 
                         bmiIndex = user_weight /(height*height);
-                        tvResult.setText("YOUR BMI INDEX IS: " + String.format("%.2f", bmiIndex));
+                        tvResult.setText("YOUR BMI IS: " + String.format("%.2f", bmiIndex));
                         tvResult.setVisibility(View.VISIBLE);
                         tvDes.setVisibility(View.VISIBLE);
                     }
@@ -219,15 +220,19 @@ public class MainActivity extends AppCompatActivity {
 
                     if (bmiIndex < 18.5){
                         tvDes.setText("You're underweight. Please eat healthy and nutritious food to increase your BMI Index.");
+                        tvDes.setTextColor(Color.parseColor("#FE2F2F"));
                     }
                     else if(bmiIndex >= 18.5 && bmiIndex <= 24.9){
                         tvDes.setText("Your BMI Index is perfect. Keep it up. \n 😎 😎");
+                        tvDes.setTextColor(Color.parseColor("#FFFFFF"));
                     }
                     else if (bmiIndex >= 25 && bmiIndex <= 29.9){
-                        tvDes.setText("Your BMI Index is overweight. You should control your diet and exercise regularly.");
+                        tvDes.setText("Your BMI is overweight. You should control your diet and exercise regularly.");
+                        tvDes.setTextColor(Color.parseColor("#FE2F2F"));
                     }
                     else{
                         tvDes.setText("You're too overweight. You should control your diet and exercise regularly. Please control your weight... ");
+                        tvDes.setTextColor(Color.parseColor("#FF0000"));
                     }
 
             }
